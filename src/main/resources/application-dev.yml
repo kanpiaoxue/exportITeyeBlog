@@ -1,0 +1,19 @@
+spring:  
+  application:  
+    name: ITeye博客导出工具 
+  
+# logging start  
+logging.file: "${HOME}/logs/exportiteyeblog/exportiteyeblog.log"  
+logging:  
+  file:  
+    max-size: 5MB
+    max-history: 20  
+  level:  
+    root: ERROR  
+    org.springframework: INFO  
+    org.kanpiaoxue.exportiteyeblog: DEBUG
+   
+iteyeblog:
+  host: "http://xxx.iteye.com"
+  blogsavepath: /Users/kanpiaoxue/Documents/blog/finalblogs
+  cookies: ""
